@@ -46,4 +46,13 @@ public class PetrolStationEntity {
     @Column(name = "region")
     private String region;
 
+    public PetrolStationEntity(String address, double latitude, double longtitude, String name, String country, String phone, String region) {
+        this.address = address;
+        this.latitude = latitude;
+        this.longtitude = longtitude;
+        this.name = name;
+        this.country = country;
+        this.phone = phone;
+        this.region = region;
+    }
 }
