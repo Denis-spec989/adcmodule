@@ -1,10 +1,7 @@
 package com.denisspec.adcmodule.service.impl;
 
 import com.denisspec.adcmodule.entities.PetrolStationEntity;
-import com.denisspec.adcmodule.models.CSV;
-import com.denisspec.adcmodule.models.MultipartModel;
-import com.denisspec.adcmodule.models.PetrolStationDto;
-import com.denisspec.adcmodule.models.XML;
+import com.denisspec.adcmodule.models.*;
 import com.denisspec.adcmodule.repository.PetrolStationRepository;
 import com.denisspec.adcmodule.service.PetrolStationService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +17,8 @@ public class PetrolStationServiceImpl implements PetrolStationService {
     private CSVConverter csvConverter;
     @Autowired
     private XmlConverter xmlConverter;
+    @Autowired
+    private JSONConverter jsonConverter;
     @Autowired
      private PetrolStationRepository petrolStationRepository;
     PetrolStationEntity dtoToEntity(PetrolStationDto petrolStationDto) {
@@ -63,7 +62,7 @@ public class PetrolStationServiceImpl implements PetrolStationService {
         if(input.getMultipartFile().getOriginalFilename().contains(".json")){
             System.out.println("Was got .json file");
             //get converted dtos before save
-
+            petrolStationDtoListAfterConverting = (List<PetrolStationDto>)  jsonConverter.convert(new JSON(input.getMultipartFile()));
             save(petrolStationDtoListAfterConverting);
         }
         if(input.getMultipartFile().getOriginalFilename().contains(".xml")){
