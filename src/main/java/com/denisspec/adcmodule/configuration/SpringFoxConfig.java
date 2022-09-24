@@ -29,7 +29,7 @@ public class SpringFoxConfig {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("licard.b2b"))
+                .apis(RequestHandlerSelectors.basePackage("com.denisspec"))
                 .build();
     }
 
