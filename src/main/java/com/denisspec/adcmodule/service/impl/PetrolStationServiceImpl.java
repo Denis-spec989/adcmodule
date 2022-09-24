@@ -4,6 +4,7 @@ import com.denisspec.adcmodule.entities.PetrolStationEntity;
 import com.denisspec.adcmodule.models.CSV;
 import com.denisspec.adcmodule.models.MultipartModel;
 import com.denisspec.adcmodule.models.PetrolStationDto;
+import com.denisspec.adcmodule.models.XML;
 import com.denisspec.adcmodule.repository.PetrolStationRepository;
 import com.denisspec.adcmodule.service.PetrolStationService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,8 @@ import java.util.List;
 public class PetrolStationServiceImpl implements PetrolStationService {
     @Autowired
     private CSVConverter csvConverter;
+    @Autowired
+    private XmlConverter xmlConverter;
     @Autowired
      private PetrolStationRepository petrolStationRepository;
     PetrolStationEntity dtoToEntity(PetrolStationDto petrolStationDto) {
@@ -60,11 +63,13 @@ public class PetrolStationServiceImpl implements PetrolStationService {
         if(input.getMultipartFile().getOriginalFilename().contains(".json")){
             System.out.println("Was got .json file");
             //get converted dtos before save
+
             save(petrolStationDtoListAfterConverting);
         }
         if(input.getMultipartFile().getOriginalFilename().contains(".xml")){
             System.out.println("Was got .xml file");
             //get converted dtos before save
+            petrolStationDtoListAfterConverting = (List<PetrolStationDto>) xmlConverter.convert(new XML(input.getMultipartFile()));
             save(petrolStationDtoListAfterConverting);
         }
     }

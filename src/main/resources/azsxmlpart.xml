@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PetrolStationList>
+    <PetrolStation>
+    <address>г.Майкоп, Хакурате, 654 </address>
+    <latitude>44.62423</latitude>
+    <longtitude>40.05552</longtitude>
+    <name>01023</name>
+    <country>RU</country>
+    <phone>(8772) 53-46-05</phone>
+    <region>Республика Адыгея</region>
+    </PetrolStation>
+    <PetrolStation>
+<address>г.Майкоп, Батарейная, 385 А</address>
+<latitude>44.57913</latitude>
+<longtitude>40.1366</longtitude>
+<name>01024</name>
+<country>RU</country>
+<phone>(8772) 56-38-20</phone>
+<region>Республика Адыгея</region>
+    </PetrolStation>
+    <PetrolStation>
+<address>г.Майкоп, Келермесское ш., 5</address>
+<latitude>44.62882</latitude>
+<longtitude>40.11182</longtitude>
+<name>01025</name>
+<country>RU</country>
+<phone>(8772) 53-98-80</phone>
+<region>Республика Адыгея</region>
+    </PetrolStation>
+    <PetrolStation>
+<address>г.Майкоп, Хакурате,194</address>
+<latitude>44.61678</latitude>
+<longtitude>40.11558</longtitude>
+<name>01026</name>
+<country>RU</country>
+<phone>(8772) 54-88-75</phone>
+<region>Республика Адыгея</region>
+</PetrolStation>
+    <PetrolStation>
+<address>г.Майкоп, ул.Шоссейная, квартал 407</address>
+<latitude>44.5678</latitude>
+<longtitude>40.13962</longtitude>
+<name>01027</name>
+<country>RU</country>
+<phone>(8772) 54-00-61</phone>
+<region>Республика Адыгея</region>
+</PetrolStation>
+    <PetrolStation>
+<address>с. Красногвардейское, ул. Фестивальная, 3</address>
+<latitude>45.14407</latitude>
+<longtitude>39.60295</longtitude>
+<name>01028</name>
+<country>RU</country>
+<phone>(87778) 5-21-54</phone>
+<region>Республика Адыгея</region>
+</PetrolStation>
+    <PetrolStation>
+<address>ст. Дондуковская, Желзнодорожная, 18, Гиагинский р-н</address>
+<latitude>44.9034</latitude>
+<longtitude>40.3543</longtitude>
+<name>01030</name>
+<country>RU</country>
+<phone>8 (918) 092-28-79</phone>
+<region>Республика Адыгея</region>
+</PetrolStation>
+    <PetrolStation>
+<address>ст. Кужорская на трассе Майкоп-Лабинск</address>
+<latitude>44.64818</latitude>
+<longtitude>40.2921</longtitude>
+<name>01031</name>
+<country>RU</country>
+<phone>8 (918) 247-94-88</phone>
+<region>Республика Адыгея</region>
+</PetrolStation>
+    <PetrolStation>
+<address>п. Каменномостский, ул. Мира, 1</address>
+<latitude>44.3025</latitude>
+<longtitude>40.18855</longtitude>
+<name>01032</name>
+<country>RU</country>
+<phone>(87777) 5-31-41</phone>
+<region>Республика Адыгея</region>
+</PetrolStation>
+    <PetrolStation>
+<address>а.Кошехабль, ул.Дружбы народов, 84, Кошехабльский р-н</address>
+<latitude>44.90218</latitude>
+<longtitude>40.47625</longtitude>
+<name>01033</name>
+<country>RU</country>
+<phone>8 (918) 092-33-98</phone>
+<region>Республика Адыгея</region>
+</PetrolStation>
+    <PetrolStation>
+<address>1353 км трассы Москва-Новороссийск, участок Краснодар-Джубга, справа, г.Адыгейск, 16 км от поворота на г.Краснодар</address>
+<latitude>44.89548</latitude>
+<longtitude>39.16577</longtitude>
+<name>01034</name>
+<country>RU</country>
+<phone>(861) 240-80-98</phone>
+<region>Республика Адыгея</region>
+</PetrolStation>
+    <PetrolStation>
+<address>п.Энем на трассе Краснодар-Новороссийск , справа при движении от г.Новороссийск</address>
+<latitude>44.90862</latitude>
+<longtitude>38.8825</longtitude>
+<name>01035</name>
+<country>RU</country>
+<phone>(861)-240-80-82</phone>
+<region>Республика Адыгея</region>
+</PetrolStation>
+    <PetrolStation>
+<address>п. Энем на трассе Краснодар - Новороссийск </address>
+<latitude>44.94992</latitude>
+<longtitude>38.92487</longtitude>
+<name>01109</name>
+<country>RU</country>
+<phone>(861) 240-90-07</phone>
+<region>Республика Адыгея</region>
+</PetrolStation>
+    <PetrolStation>
+<address>п. Яблоновский, Тургеневское шоссе 32, трасса Краснодар Новороссийск, слева напротив, торгового центра Мега</address>
+<latitude>45.00765</latitude>
+<longtitude>38.93187</longtitude>
+<name>01155</name>
+<country>RU</country>
+<phone>8 (861) 240-80-99</phone>
+<region>Республика Адыгея</region>
+</PetrolStation>
+    <PetrolStation>
+<address>Теучежский район, А/М Дон, справа км 1347-450м</address>
+<latitude>44.94397</latitude>
+<longtitude>39.12667</longtitude>
+<name>01159</name>
+<country>RU</country>
+<phone>89882454086</phone>
+<region>Республика Адыгея</region>
+</PetrolStation>
+    <PetrolStation>
+<address>г. Майкоп, ул. Подлесная,25</address>
+<latitude>44.58963</latitude>
+<longtitude>40.09867</longtitude>
+<name>01183</name>
+<country>RU</country>
+<phone>(8772)521815</phone>
+<region>Республика Адыгея</region>
+</PetrolStation>
+    <PetrolStation>
+<address>Теучежский район, с. Красная, вдоль а/д «Энем-Адыгейск-Бжедугхабль» км 54+00 (справа)</address>
+<latitude>44.8749</latitude>
+<longtitude>39.452</longtitude>
+<name>01190</name>
+<country>RU</country>
+<phone>89882454367</phone>
+<region>Республика Адыгея</region>
+</PetrolStation>
+    <PetrolStation>
+<address>а/д Майкоп - Усть-Лабинск, км 53 + 120, слева, аул Бжедугхабль</address>
+<latitude>44.981465</latitude>
+<longtitude>39.717984</longtitude>
+<name>01199</name>
+<country>RU</country>
+<phone>8 (988) 381-50-88</phone>
+<region>Республика Адыгея</region>
+</PetrolStation>
+    <PetrolStation>
+<address>ст. Ханская, а/д Белореченск-Майкоп, справа при въезде со стороны Белореченска</address>
+<latitude>44.69379</latitude>
+<longtitude>39.94462</longtitude>
+<name>01207</name>
+<country>RU</country>
+<phone>8 (988) 381-50-70</phone>
+<region>Республика Адыгея</region>
+</PetrolStation>
+    <PetrolStation>
+<address>Тахтамукайский районн, Автотрасса А-146 1-3 км. Справа</address>
+<latitude>44.947908</latitude>
+<longtitude>39.033946</longtitude>
+<name>01263</name>
+<country>RU</country>
+<phone>8 (989) 858-67-02</phone>
+<region>Республика Адыгея</region>
+</PetrolStation>
+    <PetrolStation>
+<address>Тахтамукайский районн, a. Новая Адыгея, ул. Тургеневское шоссе 1/3</address>
+<latitude>45.02735</latitude>
+<longtitude>38.94479</longtitude>
+<name>01266</name>
+<country>RU</country>
+<phone>8 (87771) 4-69-13</phone>
+<region>Республика Адыгея</region>
+</PetrolStation>
+
+        </PetrolStationList>
