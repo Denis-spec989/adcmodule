@@ -53,23 +53,39 @@ public class PetrolStationServiceImpl implements PetrolStationService {
     @Override
     public void load(MultipartModel input) throws IOException {
         List<PetrolStationDto> petrolStationDtoListAfterConverting = new ArrayList<>();
+        List<PetrolStationDto> newPetrolStationsDtoFromFileAfterConverting = new ArrayList<>();
        if(input.getMultipartFile().getOriginalFilename().contains(".csv")){
            System.out.println("Was got .csv file");
            //get converted dtos before save
            petrolStationDtoListAfterConverting = (List<PetrolStationDto>) csvConverter.convert(new CSV(input.getMultipartFile()));
-           save(petrolStationDtoListAfterConverting);
+           for(PetrolStationDto petrolStationDto:petrolStationDtoListAfterConverting){
+               if(petrolStationRepository.findByNameAndRegion(petrolStationDto.getName(),petrolStationDto.getRegion()).isEmpty()){
+                   newPetrolStationsDtoFromFileAfterConverting.add(petrolStationDto);
+               }
+           }
+           save(newPetrolStationsDtoFromFileAfterConverting);
        }
         if(input.getMultipartFile().getOriginalFilename().contains(".json")){
             System.out.println("Was got .json file");
             //get converted dtos before save
             petrolStationDtoListAfterConverting = (List<PetrolStationDto>)  jsonConverter.convert(new JSON(input.getMultipartFile()));
-            save(petrolStationDtoListAfterConverting);
+            for(PetrolStationDto petrolStationDto:petrolStationDtoListAfterConverting){
+                if(petrolStationRepository.findByNameAndRegion(petrolStationDto.getName(),petrolStationDto.getRegion()).isEmpty()){
+                    newPetrolStationsDtoFromFileAfterConverting.add(petrolStationDto);
+                }
+            }
+            save(newPetrolStationsDtoFromFileAfterConverting);
         }
         if(input.getMultipartFile().getOriginalFilename().contains(".xml")){
             System.out.println("Was got .xml file");
             //get converted dtos before save
             petrolStationDtoListAfterConverting = (List<PetrolStationDto>) xmlConverter.convert(new XML(input.getMultipartFile()));
-            save(petrolStationDtoListAfterConverting);
+            for(PetrolStationDto petrolStationDto:petrolStationDtoListAfterConverting){
+                if(petrolStationRepository.findByNameAndRegion(petrolStationDto.getName(),petrolStationDto.getRegion()).isEmpty()){
+                    newPetrolStationsDtoFromFileAfterConverting.add(petrolStationDto);
+                }
+            }
+            save(newPetrolStationsDtoFromFileAfterConverting);
         }
     }
 }
