@@ -6,6 +6,7 @@ import com.denisspec.adcmodule.repository.PetrolStationRepository;
 import com.denisspec.adcmodule.service.PetrolStationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -40,6 +41,7 @@ public class PetrolStationServiceImpl implements PetrolStationService {
     }
 
     @Override
+    @Transactional
     public void save(Iterable<PetrolStationDto> petrolStationDtos) {
         ArrayList<PetrolStationEntity> petrolStationEntities = new ArrayList<>();
         for (PetrolStationDto dto : petrolStationDtos) {
@@ -87,5 +89,11 @@ public class PetrolStationServiceImpl implements PetrolStationService {
             }
             save(newPetrolStationsDtoFromFileAfterConverting);
         }
+    }
+
+    @Override
+    @Transactional
+    public List<PetrolStationEntity> getAllPetrolStations() {
+        return petrolStationRepository.findAll();
     }
 }
