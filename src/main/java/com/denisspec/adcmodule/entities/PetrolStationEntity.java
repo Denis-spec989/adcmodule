@@ -5,6 +5,7 @@ import org.hibernate.annotations.DynamicUpdate;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.Objects;
 import java.util.UUID;
 
 
@@ -49,5 +50,18 @@ public class PetrolStationEntity {
         this.country = country;
         this.phone = phone;
         this.region = region;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof PetrolStationEntity)) return false;
+        PetrolStationEntity that = (PetrolStationEntity) o;
+        return Double.compare(that.getLatitude(), getLatitude()) == 0 && Double.compare(that.getLongtitude(), getLongtitude()) == 0 && Objects.equals(getAddress(), that.getAddress()) && Objects.equals(getName(), that.getName()) && Objects.equals(getCountry(), that.getCountry()) && Objects.equals(getPhone(), that.getPhone()) && Objects.equals(getRegion(), that.getRegion());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getAddress(), getLatitude(), getLongtitude(), getName(), getCountry(), getPhone(), getRegion());
     }
 }
