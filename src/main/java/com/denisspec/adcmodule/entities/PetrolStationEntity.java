@@ -7,8 +7,8 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.util.UUID;
 
-@Entity
-@Table(name = "petrolstations")
+
+
 @Getter
 @Setter
 @DynamicUpdate
@@ -16,6 +16,8 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@Entity
+@Table(name = "petrolstations")
 public class PetrolStationEntity {
     @Id
     @GeneratedValue(generator = "UUID")
@@ -24,25 +26,18 @@ public class PetrolStationEntity {
             strategy = "org.hibernate.id.UUIDGenerator"
     )
     private UUID id;
-
     @Column(name = "address")
     private String address;
-
     @Column(name = "latitude")
     private double latitude;
-
     @Column(name = "longtitude")
     private double longtitude;
-
     @Column(name = "name")
     private String name;
-
     @Column(name = "country")
     private String country;
-
     @Column(name = "phone")
     private String phone;
-
     @Column(name = "region")
     private String region;
 
